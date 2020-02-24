@@ -1,0 +1,18 @@
+# Data Presentation and Use
+
+_How is data presented to the public and to specific end users (e.g. public health agencies)?_
+
+One good example of how data can be presented to the public is Wildlife-of-our-Homes. This project allowed contributing citizens who collected microbe samples from their homes to “see” and interact with the data using a platform built from open source visualisation tools http://robdunnlab.com/projects/wild-life-of-our-homes/data-visualization/ 
+
+The BOLD systems-SDP (student data portal) is an integrated workbench supporting the assembly, analysis and publication of DNA barcode data by students http://v3.boldsystems.org/index.php/SDP_Home 
+For researchers and Public Health officials, GBIF provides easy and fast global access to data and metadata, and maps to browse geographically.
+
+_What are the particular needs of these end-users?_
+
+Following the FAIR principles, for biodiversity data best practice would be to have the data interoperable and indexable by GBIF, so their policies regarding formatting, metadata and open licensing will need to be followed. This means CC0 or CC-BY licenses need to be followed.
+
+The other policy to be careful to follow is the "Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization to the Convention on Biological Diversity".
+
+_How is data used for vector management and research?_
+
+Submitting the data to GBIF means it can be integrated and easily viewed on the global biodiversity occurrence map for all researchers and public health workers to see and track with quite high confidence.

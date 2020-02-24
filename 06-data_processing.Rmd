@@ -1,0 +1,9 @@
+# Data Processing and Validation
+
+_How is data processed once it is collected?_
+
+There are a number of different sequencing technologies and approaches (e.g. barcoding, genotyping, whole genome sequencing) that can be used to collect this data, and they are also changing rapidly so it is probably beyond the scope of this document to go into detail here. The output of all of these technologies are quite standardised DNA sequence formats. They then ideally need to be used in GBIF compliant ways.
+
+_How is it validated?_
+
+Darwin core validation tool https://tools.gbif.org/#dwca-validator 

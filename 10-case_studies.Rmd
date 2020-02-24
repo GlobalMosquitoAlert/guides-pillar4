@@ -1,0 +1,36 @@
+# Case Studies
+
+*Mueckenatlas*
+
+The specific data associated with the collected mosquito(es), such as collection date, locality, description of the collection site, weather etc., is supposed to be fed into the German national mosquito database CULBASE where collection data from various German monitoring programmes and research projects are gathered.
+https://mueckenatlas.de/
+
+All the focus seems to be keeping this for the research community, so this is not really an example of data sharing in citizen science.
+
+*Invasive Mosquito Project*
+
+The data (mosquitoes) are gathered by teachers and citizens and sent to local mosquito control/public health agencies or in their absence sent to the United States Department of Agriculture. The information is publically shared and the mosquito samples are stored at the USDA for future population genetics projects. http://www.citizenscience.us/imp/. 
+
+*Kissing bug citizen science program*
+
+Researchers in Texas created a kissing bug citizen science program to educate the public about Chagas disease, and to create a mechanism for the public to submit the triatomine ‘kissing bug’ vectors.
+
+http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004235
+
+Nice example of educating and interacting with the public. Didn't collect sequencing data though.
+
+*Serendipitous discovery of Wolbachia genomes in multiple Drosophila species*
+
+Making raw sequencing data of drosophila species available without restriction in NCBI allowed other researchers several years later to discover completely new wolbachia symbiont genomes in them. 
+
+https://doi.org/10.1186/gb-2005-6-3-r23
+
+Example of both the importance of collecting raw sequencing data and of data-driven research. Open data can enable serendipitous future discoveries that the original data producers may not have even thought about.
+
+*Open sourcing genomes / crowdsourcing killer outbreaks*
+
+Releasing the first sequencing data from the deadly 2011 German E. coli outbreak CC0 and in a citeable manner with data DOIs to give the data producers credit helped kick-start a burst of crowd-sourced, curiosity-driven analyses from bioinformaticians (and at least one citizen blogger) around the world. Doing science in this accelerated way sped up diagnosis and treatments, within a couple of a days a potential ancestral strain had been identified, and enabled the rapid development of diagnostic tests and anti-microbial agents.
+
+http://opendatahandbook.org/value-stories/en/open-sourcing-genomes/
+
+This example has been used as an example for EU science policy, with the Royal Society in the UK using it as an example of “the power of intelligently open data”, and highlighting it on the cover of their influential “Science as an Open Enterprise” report.

@@ -1,0 +1,11 @@
+# Pillar Objectives {#objectives}
+
+* Collected specimens will be submitted to their local operational partner via postal mail. Users should receive notifications when their specimens arrive, and when new vectors are identified in their area.  
+
+* DNA is extracted and then sequenced using standard protocols and practices to enable identification of the species.
+
+* Pictures (facultative) of the specimens collected may also be stored alongside other metadata such as location, sampling details and other notes (such as number of species in an area).
+
+* If the specimens are not destroyed in the process of extracting the DNA, and if the DNA is not all used up in the process of sequencing it then these would be ideally stored for future use, and sample/voucher number details stored and made public.
+
+* Sequencing data and the contextual information around it should be made publicly available following community norms and practices to maximise its research value. 

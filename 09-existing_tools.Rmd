@@ -1,0 +1,11 @@
+# Existing Tools
+
+_What concrete tools can be drawn from to implement this pillar?_
+
+* GBIF use Darwin core metadata and there are templates for the collection of this https://tools.gbif.org/#templates 
+* Best practice for sequencing metadata is encapsulated by MIxS checklists: http://www.ebi.ac.uk/ena/submit/mixs-checklists
+  * Of which barcoding data is covered: http://www.ebi.ac.uk/ena/submit/species-barcode-checklist 
+* GBIF collects geographically tagged INSDC sequences, which as processed by the INSDC databases (inc EBI) will follow this, e.g.:
+* https://www.gbif.org/dataset/ad43e954-dd79-4986-ae34-9ccdbd8bf568 
+* If new species are detected they need to be registered (http://zoobank.org/) in Zoobank and the procedure needs to follow ICZN guidelines (http://www.iczn.org/) 
+* For students and citizen scientists the eBOL Community Web Portal includes barcoding tools and apps to collect and analyse their samples in standardised, research friendly ways http://www.educationandbarcoding.org/ 

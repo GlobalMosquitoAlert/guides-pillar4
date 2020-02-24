@@ -1,0 +1,21 @@
+--- 
+title: "Vector Mosquito Monitoring Via Biodiversity Specimen/DNA Data Sharing"
+subtitle: "Best Practices Guide"
+author: "Global Mosquito Alert Consortium"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: article
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+nocite: |
+  @curtis2015combining, @moritz2004dna, @hebert2003biological, @naaum2015standards, @wilkinson2016fair
+github-repo: GlobalMosquitoAlert/guides-pillar4
+description: "Best practices guide for Pillar 4 of the GMAC toolkit: Vector Mosquito Monitoring via biodiversity specimen/DNA data sharing"
+---
+
+# {-}
+
+![Creative Commons License](images/by-nc-sa.png)  
+The online version of this book is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). 

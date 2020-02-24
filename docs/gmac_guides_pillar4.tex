@@ -1,0 +1,298 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Vector Mosquito Monitoring Via Biodiversity Specimen/DNA Data Sharing},
+            pdfauthor={Global Mosquito Alert Consortium},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Vector Mosquito Monitoring Via Biodiversity Specimen/DNA Data Sharing}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \subtitle{Best Practices Guide}
+  \author{Global Mosquito Alert Consortium}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2020-02-24}
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{section}{%
+\section*{}\label{section}}
+\addcontentsline{toc}{section}{}
+
+\includegraphics{images/by-nc-sa.png}\\
+The online version of this book is licensed under the \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License}.
+
+\hypertarget{intro}{%
+\section{Introduction}\label{intro}}
+
+The Global Mosquito Alert Consortium's (GMAC's) best practices guides offer experiences gained from a variety of projects that use citizen science to better understand and combat disease-vector mosquitoes. The goal is to create a growing repository of information about how best to use and customize the GMAC's citizen science toolkit for local implementation.
+
+The present guide encompasses Pillar 4 of the GMAC toolkit: Vector Mosquito Monitoring via biodiversity specimen/DNA data sharing. This is a shared document to be used for developing an effective international citizen science network for vector mosquito monitoring, this part covering best practice in collecting mosquito specimens and DNA. Best practice for research data sharing has been handled differently by different fields, but an attempt to synthesis these was carried out by the Toronto International Data Release Workshop in 2009 (see: \url{http://www.nature.com/nature/journal/v461/n7261/full/461168a.html}). DNA data sharing has a particularly long history, and has lead the way in much of biological research. The principles for rapid release of genome-sequence data were first formulated the Bermuda (1996-1998) and \href{https://www.genome.gov/10506537/}{Fort Lauderdale (2003) meetings}, and remain the accepted policies recognised by the genomics community, journals and funders. Data producers were obliged to submit their data to one of the three \href{http://www.insdc.org/}{INSDC databases (EBI, NCBI or DDBJ)} as soon as possible after the assembled sequence has met a set of quality evaluation criteria. In exchange for `early release' of their data, the international sequencing centers retained the right to be the first to describe and analyze their complete datasets in peer-reviewed publications. Leading to the Toronto workshop, attendees endorsed the value of rapid pre-publication data release for large reference datasets in biology and medicine that have broad utility and agreed that pre-publication data release should go beyond genomics. This asks data producers to release their data, but they request a protected time period to allow them to be the first to publish the data set, this should be limited to global analyses of the data and ideally expire within one year.
+
+Beyond making data open, best practice is now to follow the FAIR Guiding Principles for scientific data management and stewardship (see: \url{https://www.nature.com/articles/sdata201618}) which focuses on the interoperability and machine readability of datasets. To maximise the re-use of this citizen collected data the Global Mosquito Alert Consortium would ideally follow these overarching principles and practices. For more practical purposes there are more field specific guidelines and systems for dealing with collecting this type of insect biodiversity data that will be outlined in more detail below.
+
+\hypertarget{objectives}{%
+\section{Pillar Objectives}\label{objectives}}
+
+\begin{itemize}
+\item
+  Collected specimens will be submitted to their local operational partner via postal mail. Users should receive notifications when their specimens arrive, and when new vectors are identified in their area.
+\item
+  DNA is extracted and then sequenced using standard protocols and practices to enable identification of the species.
+\item
+  Pictures (facultative) of the specimens collected may also be stored alongside other metadata such as location, sampling details and other notes (such as number of species in an area).
+\item
+  If the specimens are not destroyed in the process of extracting the DNA, and if the DNA is not all used up in the process of sequencing it then these would be ideally stored for future use, and sample/voucher number details stored and made public.
+\item
+  Sequencing data and the contextual information around it should be made publicly available following community norms and practices to maximise its research value.
+\end{itemize}
+
+\hypertarget{citizen-scientist-roles-and-motivations}{%
+\section{Citizen Scientist Roles and Motivations}\label{citizen-scientist-roles-and-motivations}}
+
+\emph{How are citizen scientists involved?}
+
+\begin{itemize}
+\tightlist
+\item
+  They find specimens, send them to the local operational partner, and contribute in tracking these public health hazards.
+\end{itemize}
+
+\emph{How are tasks divided between citizen scientists and experts?}
+
+\begin{itemize}
+\tightlist
+\item
+  See above.
+\end{itemize}
+
+\emph{What motivates the citizen scientists?}
+
+\begin{itemize}
+\tightlist
+\item
+  Fighting disease. Personal health and safety for their families and communities.
+\item
+  They can be the first to discover invasive or even completely new species.
+\item
+  Part of classroom education projects to boost understanding of biodiversity, public health, the consequences of climate change, and increase genetic literacy.
+\end{itemize}
+
+\hypertarget{ethics}{%
+\section{Ethics}\label{ethics}}
+
+Unless human DNA or pictures are accidentally passed on there should be no ethical considerations with this type of data.
+
+\hypertarget{data-collection}{%
+\section{Data Collection}\label{data-collection}}
+
+Metadata should be collected in a manner that is GBIF compliant and ideally follows the Darwin Core Standard (DwC) that offers a stable, straightforward and flexible framework for compiling biodiversity data from varied and variable sources. \url{https://www.gbif.org/darwin-core}. Would be best practice to include these fields in the data collection process (e.g.~people sending specimens asked to include this in a webform, app or printed checklist).
+
+If this is too complicated, the eBOL Community Web Portal provides guidelines and resources for educators, students and citizen scientists seeking to organize, manage, and share their project data with the broader DNA barcoding community in a form that is compatible with research standards. This also includes DNA Barcoding Assistant app for smartphones that helps streamline and standardize the collection of sample information by students \url{http://www.educationandbarcoding.org/DNAB.php}
+
+Additional Citizen friendly guidelines for DNA barcoding are available here: \url{http://www.dnabarcoding101.org/resources/}
+
+See pillar 1 for best practice on collecting the associated images.
+
+\hypertarget{data-processing-and-validation}{%
+\section{Data Processing and Validation}\label{data-processing-and-validation}}
+
+\emph{How is data processed once it is collected?}
+
+There are a number of different sequencing technologies and approaches (e.g.~barcoding, genotyping, whole genome sequencing) that can be used to collect this data, and they are also changing rapidly so it is probably beyond the scope of this document to go into detail here. The output of all of these technologies are quite standardised DNA sequence formats. They then ideally need to be used in GBIF compliant ways.
+
+\emph{How is it validated?}
+
+Darwin core validation tool \url{https://tools.gbif.org/\#dwca-validator}
+
+\hypertarget{data-presentation-and-use}{%
+\section{Data Presentation and Use}\label{data-presentation-and-use}}
+
+\emph{How is data presented to the public and to specific end users (e.g.~public health agencies)?}
+
+One good example of how data can be presented to the public is Wildlife-of-our-Homes. This project allowed contributing citizens who collected microbe samples from their homes to ``see'' and interact with the data using a platform built from open source visualisation tools \url{http://robdunnlab.com/projects/wild-life-of-our-homes/data-visualization/}
+
+The BOLD systems-SDP (student data portal) is an integrated workbench supporting the assembly, analysis and publication of DNA barcode data by students \url{http://v3.boldsystems.org/index.php/SDP_Home}
+For researchers and Public Health officials, GBIF provides easy and fast global access to data and metadata, and maps to browse geographically.
+
+\emph{What are the particular needs of these end-users?}
+
+Following the FAIR principles, for biodiversity data best practice would be to have the data interoperable and indexable by GBIF, so their policies regarding formatting, metadata and open licensing will need to be followed. This means CC0 or CC-BY licenses need to be followed.
+
+The other policy to be careful to follow is the ``Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization to the Convention on Biological Diversity''.
+
+\emph{How is data used for vector management and research?}
+
+Submitting the data to GBIF means it can be integrated and easily viewed on the global biodiversity occurrence map for all researchers and public health workers to see and track with quite high confidence.
+
+\hypertarget{data-structures-and-repository-links}{%
+\section{Data Structures and Repository Links}\label{data-structures-and-repository-links}}
+
+\emph{If possible, what are the core requirements for data structure?}
+
+See above and the tools section for details on GBIF and sequencing community norms.
+
+\emph{What repositories should data from this pillar be sent to?}
+
+Raw sequencing data is universally mandated go in one of the three INSDC databases (NCBI, EBI, DDBJ), but there is more scope in what is done with the downstream processed data if you want to provide bulk access or use another database.
+
+Barcoding data should ideally be deposited with Barcode of Life (\url{http://www.boldsystems.org/}), but this is brokered via the INSDC databases anyway.
+
+\hypertarget{existing-tools}{%
+\section{Existing Tools}\label{existing-tools}}
+
+\emph{What concrete tools can be drawn from to implement this pillar?}
+
+\begin{itemize}
+\tightlist
+\item
+  GBIF use Darwin core metadata and there are templates for the collection of this \url{https://tools.gbif.org/\#templates}
+\item
+  Best practice for sequencing metadata is encapsulated by MIxS checklists: \url{http://www.ebi.ac.uk/ena/submit/mixs-checklists}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Of which barcoding data is covered: \url{http://www.ebi.ac.uk/ena/submit/species-barcode-checklist}
+  \end{itemize}
+\item
+  GBIF collects geographically tagged INSDC sequences, which as processed by the INSDC databases (inc EBI) will follow this, e.g.:
+\item
+  \url{https://www.gbif.org/dataset/ad43e954-dd79-4986-ae34-9ccdbd8bf568}
+\item
+  If new species are detected they need to be registered (\url{http://zoobank.org/}) in Zoobank and the procedure needs to follow ICZN guidelines (\url{http://www.iczn.org/})
+\item
+  For students and citizen scientists the eBOL Community Web Portal includes barcoding tools and apps to collect and analyse their samples in standardised, research friendly ways \url{http://www.educationandbarcoding.org/}
+\end{itemize}
+
+\hypertarget{case-studies}{%
+\section{Case Studies}\label{case-studies}}
+
+\emph{Mueckenatlas}
+
+The specific data associated with the collected mosquito(es), such as collection date, locality, description of the collection site, weather etc., is supposed to be fed into the German national mosquito database CULBASE where collection data from various German monitoring programmes and research projects are gathered.
+\url{https://mueckenatlas.de/}
+
+All the focus seems to be keeping this for the research community, so this is not really an example of data sharing in citizen science.
+
+\emph{Invasive Mosquito Project}
+
+The data (mosquitoes) are gathered by teachers and citizens and sent to local mosquito control/public health agencies or in their absence sent to the United States Department of Agriculture. The information is publically shared and the mosquito samples are stored at the USDA for future population genetics projects. \url{http://www.citizenscience.us/imp/}.
+
+\emph{Kissing bug citizen science program}
+
+Researchers in Texas created a kissing bug citizen science program to educate the public about Chagas disease, and to create a mechanism for the public to submit the triatomine `kissing bug' vectors.
+
+\url{http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004235}
+
+Nice example of educating and interacting with the public. Didn't collect sequencing data though.
+
+\emph{Serendipitous discovery of Wolbachia genomes in multiple Drosophila species}
+
+Making raw sequencing data of drosophila species available without restriction in NCBI allowed other researchers several years later to discover completely new wolbachia symbiont genomes in them.
+
+\url{https://doi.org/10.1186/gb-2005-6-3-r23}
+
+Example of both the importance of collecting raw sequencing data and of data-driven research. Open data can enable serendipitous future discoveries that the original data producers may not have even thought about.
+
+\emph{Open sourcing genomes / crowdsourcing killer outbreaks}
+
+Releasing the first sequencing data from the deadly 2011 German E. coli outbreak CC0 and in a citeable manner with data DOIs to give the data producers credit helped kick-start a burst of crowd-sourced, curiosity-driven analyses from bioinformaticians (and at least one citizen blogger) around the world. Doing science in this accelerated way sped up diagnosis and treatments, within a couple of a days a potential ancestral strain had been identified, and enabled the rapid development of diagnostic tests and anti-microbial agents.
+
+\url{http://opendatahandbook.org/value-stories/en/open-sourcing-genomes/}
+
+This example has been used as an example for EU science policy, with the Royal Society in the UK using it as an example of ``the power of intelligently open data'', and highlighting it on the cover of their influential ``Science as an Open Enterprise'' report.
+
+\bibliography{book.bib}
+
+
+\end{document}

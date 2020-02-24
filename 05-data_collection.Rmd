@@ -1,0 +1,9 @@
+# Data Collection
+
+Metadata should be collected in a manner that is GBIF compliant and ideally follows the Darwin Core Standard (DwC) that offers a stable, straightforward and flexible framework for compiling biodiversity data from varied and variable sources. https://www.gbif.org/darwin-core. Would be best practice to include these fields in the data collection process (e.g. people sending specimens asked to include this in a webform, app or printed checklist).
+
+If this is too complicated, the eBOL Community Web Portal provides guidelines and resources for educators, students and citizen scientists seeking to organize, manage, and share their project data with the broader DNA barcoding community in a form that is compatible with research standards. This also includes DNA Barcoding Assistant app for smartphones that helps streamline and standardize the collection of sample information by students http://www.educationandbarcoding.org/DNAB.php  
+
+Additional Citizen friendly guidelines for DNA barcoding are available here: http://www.dnabarcoding101.org/resources/ 
+
+See pillar 1 for best practice on collecting the associated images.

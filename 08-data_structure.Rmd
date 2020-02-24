@@ -1,0 +1,13 @@
+# Data Structures and Repository Links
+
+_If possible, what are the core requirements for data structure?_
+
+See above and the tools section for details on GBIF and sequencing community norms.
+
+_What repositories should data from this pillar be sent to?_
+
+Raw sequencing data is universally mandated go in one of the three INSDC databases (NCBI, EBI, DDBJ), but there is more scope in what is done with the downstream processed data if you want to provide bulk access or use another database. 
+
+Barcoding data should ideally be deposited with Barcode of Life (http://www.boldsystems.org/), but this is brokered via the INSDC databases anyway. 
+
+
