@@ -17,5 +17,9 @@ description: "Best practices guide for Pillar 4 of the GMAC toolkit: Vector Mosq
 
 # {-}
 
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
+knitr::include_graphics('images/cover.jpeg', dpi = NA)
+```
+
 ![Creative Commons License](images/by-nc-sa.png)  
 The online version of this book is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). 

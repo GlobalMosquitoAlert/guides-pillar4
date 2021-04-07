@@ -1,0 +1,10 @@
+intro
+objectives
+citizen-scientist-roles-and-motivations
+ethics
+data-collection
+data-processing-and-validation
+data-presentation-and-use
+data-structures-and-repository-links
+existing-tools
+case-studies
